@@ -1,113 +1,123 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-	<parent>
-		<groupId>br.com.softplan.security.zap</groupId>
-		<artifactId>zap-maven-plugin-parent</artifactId>
-		<version>1.2.2-0-SNAPSHOT</version>
-		<relativePath>../zap-maven-plugin-parent</relativePath>
-	</parent>
+    <parent>
+        <groupId>de.martinreinhardt-online</groupId>
+        <artifactId>zap-maven-plugin-parent</artifactId>
+        <version>0.1.0</version>
+        <relativePath>../zap-maven-plugin-parent</relativePath>
+    </parent>
 
-	<artifactId>zap-maven-plugin</artifactId>
-	<packaging>maven-plugin</packaging>
-	
-	<name>ZAP Maven Plugin</name>
-	<description>OWASP Zed Attack Proxy (ZAP) Maven plugin</description>
-	<url>https://github.com/pdsoftplan/zap-maven-plugin</url>
-	<inceptionYear>2015</inceptionYear>
-	<organization>
-		<name>Softplan</name>
-		<url>https://www.softplan.com.br</url>
-	</organization>
+    <artifactId>zap-maven-plugin</artifactId>
+    <packaging>maven-plugin</packaging>
 
-	<licenses>
-		<license>
-			<name>Apache License, Version 2.0</name>
-			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-			<distribution>repo</distribution>
-		</license>
-	</licenses>
-	
-	<developers>
-		<developer>
-			<id>tfcporciuncula</id>
-			<name>Thiago Porciúncula</name>
-			<email>thiago.porciuncula@softplan.com.br</email>
-			<organization>Softplan</organization>
-		</developer>
-		<developer>
-			<id>fabio.resner</id>
-			<name>Fábio Resner</name>
-			<email>fabio.resner@softplan.com.br</email>
-			<organization>Softplan</organization>
-		</developer>
-	</developers>
+    <name>ZAP Maven Plugin</name>
+    <description>OWASP Zed Attack Proxy (ZAP) Maven plugin</description>
+    <url>https://github.com/hypery2k/zap-maven-plugin</url>
 
-	<scm>
-		<connection>scm:git:git@github.com:pdsoftplan/zap-maven-plugin.git</connection>
-		<developerConnection>scm:git:git@github.com:pdsoftplan/zap-maven-plugin.git</developerConnection>
-		<url>https://github.com/pdsoftplan/zap-maven-plugin</url>
-	</scm>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
 
-	<issueManagement>
-		<system>GitHub</system>
-		<url>https://github.com/pdsoftplan/zap-maven-plugin/issues</url>
-	</issueManagement>
-	<ciManagement>
-		<system>Travis</system>
-		<url>https://travis-ci.org/pdsoftplan/zap-maven-plugin</url>
-	</ciManagement>
+    <developers>
+        <developer>
+            <id>hypery2k</id>
+            <name>Martin Reinhardt</name>
+            <email>contact@martinreinhardt-online.de</email>
+        </developer>
+        <developer>
+            <id>tfcporciuncula</id>
+            <name>Thiago Porciúncula</name>
+            <email>thiago.porciuncula@softplan.com.br</email>
+            <organization>Softplan</organization>
+        </developer>
+        <developer>
+            <id>fabio.resner</id>
+            <name>Fábio Resner</name>
+            <email>fabio.resner@softplan.com.br</email>
+            <organization>Softplan</organization>
+        </developer>
+    </developers>
 
-	<dependencies>
-		<dependency>
-			<groupId>br.com.softplan.security.zap</groupId>
-			<artifactId>zap-client-api</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.maven</groupId>
-			<artifactId>maven-plugin-api</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.maven.plugin-tools</groupId>
-			<artifactId>maven-plugin-annotations</artifactId>
-			<scope>provided</scope>
-		</dependency>
-	</dependencies>
+    <scm>
+        <connection>scm:git:git@github.com:pdsoftplan/zap-maven-plugin.git</connection>
+        <developerConnection>scm:git:git@github.com:pdsoftplan/zap-maven-plugin.git</developerConnection>
+        <url>https://github.com/hypery2k/zap-maven-plugin</url>
+    </scm>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-plugin-plugin</artifactId>
-			</plugin>
-		</plugins>
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/hypery2k/zap-maven-plugin/issues</url>
+    </issueManagement>
+    <ciManagement>
+        <system>Travis</system>
+        <url>https://travis-ci.org/pdsoftplan/zap-maven-plugin</url>
+    </ciManagement>
 
-		<pluginManagement>
-			<plugins>
-				<!-- This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself -->
-				<plugin>
-					<groupId>org.eclipse.m2e</groupId>
-					<artifactId>lifecycle-mapping</artifactId>
-					<version>1.0.0</version>
-					<configuration>
-						<lifecycleMappingMetadata>
-							<pluginExecutions>
-								<pluginExecution>
-									<pluginExecutionFilter>
-										<groupId>org.apache.maven.plugins</groupId>
-										<artifactId>maven-plugin-plugin</artifactId>
-										<versionRange>[${maven.plugin.plugin.version},)</versionRange>
-										<goals><goal>descriptor</goal></goals>
-									</pluginExecutionFilter>
-									<action><ignore></ignore></action>
-								</pluginExecution>
-							</pluginExecutions>
-						</lifecycleMappingMetadata>
-					</configuration>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-	</build>
+    <dependencies>
+        <dependency>
+            <groupId>de.martinreinhardt-online</groupId>
+            <artifactId>zap-client-api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>de.martinreinhardt-online</groupId>
+            <artifactId>zap-report-parser</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-plugin-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.maven.plugin-tools</groupId>
+            <artifactId>maven-plugin-annotations</artifactId>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-plugin-plugin</artifactId>
+            </plugin>
+        </plugins>
+
+        <pluginManagement>
+            <plugins>
+                <!-- This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself -->
+                <plugin>
+                    <groupId>org.eclipse.m2e</groupId>
+                    <artifactId>lifecycle-mapping</artifactId>
+                    <version>1.0.0</version>
+                    <configuration>
+                        <lifecycleMappingMetadata>
+                            <pluginExecutions>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>org.apache.maven.plugins</groupId>
+                                        <artifactId>maven-plugin-plugin</artifactId>
+                                        <versionRange>[${maven.plugin.plugin.version},)</versionRange>
+                                        <goals>
+                                            <goal>descriptor</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore></ignore>
+                                    </action>
+                                </pluginExecution>
+                            </pluginExecutions>
+                        </lifecycleMappingMetadata>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 
 </project>
