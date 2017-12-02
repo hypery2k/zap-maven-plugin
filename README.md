@@ -1,5 +1,6 @@
 # ZAP Maven Plugin
 
+[![Dependency Status](https://www.versioneye.com/user/projects/5a22d1f20fb24f5104b0327d/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/5a22d1f20fb24f5104b0327d)
 [![Build Status](https://travis-ci.org/hypery2k/zap-maven-plugin.svg)](https://travis-ci.org/hypery2k/zap-maven-plugin)
 [![Build Status](https://martinreinhardt-online.de/jenkins/buildStatus/icon?job=zap-maven-plugin/pipeline/master)](https://martinreinhardt-online.de/jenkins/blue/organizations/jenkins/zap-maven-plugin%2Fpipeline/branches/)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/de.martinreinhardt-online/zap-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/de.martinreinhardt-online/zap-maven-plugin)
