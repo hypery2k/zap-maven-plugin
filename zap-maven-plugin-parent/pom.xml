@@ -47,8 +47,8 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git@github.com:pdsoftplan/zap-maven-plugin.git</connection>
-        <developerConnection>scm:git:git@github.com:pdsoftplan/zap-maven-plugin.git</developerConnection>
+        <connection>scm:git:git@github.com:hypery2k/zap-maven-plugin.git</connection>
+        <developerConnection>scm:git:git@github.com:hypery2k/zap-maven-plugin.git</developerConnection>
         <url>https://github.com/hypery2k/zap-maven-plugin</url>
     </scm>
 
@@ -58,7 +58,7 @@
     </issueManagement>
     <ciManagement>
         <system>Travis</system>
-        <url>https://travis-ci.org/pdsoftplan/zap-maven-plugin</url>
+        <url>https://travis-ci.org/hypery2k/zap-maven-plugin</url>
     </ciManagement>
 
     <distributionManagement>
