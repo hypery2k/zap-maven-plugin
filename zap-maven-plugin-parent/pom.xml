@@ -78,13 +78,14 @@
         <project.reporting.outputEncoding>${project.build.sourceEncoding}</project.reporting.outputEncoding>
 
         <!-- Maven plugins versions -->
-        <maven-compiler-plugin.version>3.5</maven-compiler-plugin.version>
-        <maven-javadoc-plugin.version>2.10.3</maven-javadoc-plugin.version>
-        <maven-source-plugin.version>2.4</maven-source-plugin.version>
-        <maven-failsafe-plugin.version>2.19.1</maven-failsafe-plugin.version>
-        <maven-plugin-plugin.version>3.4</maven-plugin-plugin.version>
+        <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
+        <maven-javadoc-plugin.version>2.10.4</maven-javadoc-plugin.version>
+        <maven-source-plugin.version>3.0.1</maven-source-plugin.version>
+        <maven-failsafe-plugin.version>2.20.1</maven-failsafe-plugin.version>
+        <maven-plugin-plugin.version>3.5</maven-plugin-plugin.version>
         <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
-        <nexus-staging-maven-plugin.version>1.6.6</nexus-staging-maven-plugin.version>
+        <nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
+        <maven-plugin.gitflow.version>1.8.0</maven-plugin.gitflow.version>
 
         <!-- Dependencies versions -->
         <zap-api-java.version>1.5.0</zap-api-java.version>
@@ -96,7 +97,6 @@
         <commons-configuration.version>1.10</commons-configuration.version>
         <maven-plugin-api.version>3.5.0</maven-plugin-api.version>
         <maven-plugin-annotations.version>3.5</maven-plugin-annotations.version>
-        <maven-plugin.gitflow.version>1.7.0</maven-plugin.gitflow.version>
         <slf4j.version>1.7.25</slf4j.version>
         <logback.version>1.2.3</logback.version>
         <testng.version>6.9.10</testng.version>
