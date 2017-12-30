@@ -265,6 +265,16 @@
                     <pushReleases>true</pushReleases>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>com.versioneye</groupId>
+                <artifactId>versioneye-maven-plugin</artifactId>
+                <version>3.11.4</version>
+                <configuration>
+                    <projectId>5a22d1f20fb24f5104b0327d</projectId>
+                    <organisation>hypery2k_orga</organisation>
+                    <team>Owners</team>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
