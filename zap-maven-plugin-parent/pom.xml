@@ -99,7 +99,7 @@
         <maven-plugin.gitflow.version>1.7.0</maven-plugin.gitflow.version>
         <slf4j.version>1.7.25</slf4j.version>
         <logback.version>1.2.3</logback.version>
-        <testng.version>6.11</testng.version>
+        <testng.version>6.9.10</testng.version>
     </properties>
 
     <dependencyManagement>
