@@ -92,7 +92,7 @@
         <jdom.version>1.1.1</jdom.version>
         <selenium.version>2.49.1</selenium.version>
         <phantomjsdriver.version>1.2.0</phantomjsdriver.version>
-        <commons-lang.version>3.6</commons-lang.version>
+        <commons-lang.version>3.7</commons-lang.version>
         <commons-io.version>2.6</commons-io.version>
         <commons-configuration.version>1.10</commons-configuration.version>
         <maven-plugin-api.version>3.5.0</maven-plugin-api.version>
