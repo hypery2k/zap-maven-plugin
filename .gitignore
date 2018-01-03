@@ -13,3 +13,6 @@ test-output/
 
 # Local ZAP properties file
 zap-client-api/src/test/resources/local-zap.properties
+
+# Ignore API settings
+zap-maven-plugin-parent/src/main/resources/versioneye.properties
